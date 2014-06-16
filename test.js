@@ -1,9 +1,10 @@
 require('angular');
 require('angular-mocks');
-require('./index');
 
 require('chai').use(require('sinon-chai'));
 require('chai').use(require('chai-as-promised'));
+
+var expect = require('chai').expect;
 
 var sinon = require('sinon');
 
@@ -13,4 +14,8 @@ beforeEach(function() {
 
 afterEach(function() {
   this.sinon.restore();
+});
+
+it('', function() {
+  expect(true).to.be.true;
 });
