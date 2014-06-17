@@ -1,7 +1,6 @@
 var angular = require('angular');
+angular.module('angular-unit-testing', [
+  'angular-unit-testing.login'
+]);
 
-describe('', function() {
-  it('', function() {
-    expect(true).to.be.true;
-  });
-});
+require('./widgets');
