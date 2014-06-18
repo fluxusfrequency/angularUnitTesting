@@ -1,21 +1,6 @@
-require('angular');
-require('angular-mocks');
-
-require('chai').use(require('sinon-chai'));
-require('chai').use(require('chai-as-promised'));
-
+require('./test_helper');
 var expect = require('chai').expect;
 
-var sinon = require('sinon');
-
-beforeEach(function() {
-  this.sinon = sinon.sandbox.create();
-});
-
-afterEach(function() {
-  this.sinon.restore();
-});
-
-it('', function() {
+it('doesn not blow up', function() {
   expect(true).to.be.true;
 });
